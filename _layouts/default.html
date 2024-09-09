@@ -2,43 +2,49 @@
 <html>
 <head>
   <title>{{ page.title }}</title>
-<style>
+  <style>
     body {
       background-image: url('/personal_website/kegeltour/JanSteen_Kegeln.JPG');
       background-size: cover; /* This makes the image cover the entire page */
       background-position: center; /* Centers the image */
       background-repeat: no-repeat; /* Prevents the image from repeating */
+      margin: 0;
+      padding: 0;
+      position: relative;
     }
-    body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 0;
-  }
 
-  .content-wrapper {
-    position: relative;
-    z-index: 1; /* Ensures the content is above the overlay */
-    padding: 20px;
-    color: white; /* Ensure text is readable */
-  }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+      z-index: 0;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1; /* Ensures the content is above the overlay */
+      padding: 20px;
+      color: white; /* Ensure text is readable */
+    }
   </style>
 </head>
 <body>
-  <header>
+  <header class="content-wrapper">
     <h1>{{ page.title }}</h1>
   </header>
 
-  <section>
+  <section class="content-wrapper">
     {{ content }}
   </section>
 
-  <footer>
+  <footer class="content-wrapper">
     <p>Powered by Jekyll and GitHub Pages</p>
   </footer>
 </body>
 </html>
+
+
