@@ -5,6 +5,6 @@ title: Kegeltour "Voll daneben" 24
 
 # Den Haag
 
-- **Freitag**
-- **Samstag**
-- **Sonntag**
+- **[Freitag](kegeltour/freitag)**
+- **[Samstag](kegeltour/samstag)**
+- **[Sonntag](kegeltour/sonntag)**
