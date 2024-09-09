@@ -3,31 +3,18 @@
 <head>
   <title>{{ page.title }}</title>
   <style>
-    /* Base Styles for Desktop */
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%; /* Ensures the body takes up the full height of the page */
+      height: 100%; /* Ensures body takes up full height */
     }
 
     body {
       background-image: url('/personal_website/kegeltour/JanSteen_Kegeln.JPG');
-      background-size: contain; /* Covers the entire page */
-      background-position: right bottom; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents repeating */
-      background-attachment: fixed; /* Keeps background fixed during scroll */
-      position: relative;
-    }
-
-    body::before {
-      content: '';
-      position: fixed; /* Ensures the overlay covers the full viewport */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.3); /* Slightly darkens the image */
-      z-index: 0;
+      background-size: cover; /* Ensures the image covers the entire screen */
+      background-position: right bottom; /* Aligns image to the right and bottom on larger screens */
+      background-repeat: no-repeat; /* Prevents repeating the image */
+      background-attachment: fixed; /* Keeps the background fixed during scroll */
     }
 
     .content-wrapper {
@@ -42,6 +29,22 @@
       padding: 20px;
     }
 
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 768px) { 
+      body {
+        background-size: cover; /* Ensures the image still covers the screen on mobile */
+        background-position: center bottom; /* Aligns image to bottom and center on mobile */
+        background-attachment: scroll; /* Better for performance on mobile */
+      }
+
+      header, section, footer {
+        padding: 10px; /* Adjusts padding for smaller screens */
+      }
+
+      h1 {
+        font-size: 1.5em; /* Adjusts header font size for smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
@@ -58,5 +61,4 @@
   </footer>
 </body>
 </html>
-
 
