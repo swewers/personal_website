@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tour Details
+title: Kegeltour "Voll daneben" 24
 ---
 
 # Tour Itinerary
