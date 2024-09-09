@@ -1,1 +1,3 @@
-# personal_website
+# personal website of Stefan Wewers
+
+under construction..
