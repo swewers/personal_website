@@ -6,25 +6,26 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%; /* Ensures that the body takes up the entire height of the page */
+      height: 100%; /* Ensures the body takes up the entire height of the page */
     }
 
     body {
       background-image: url('/personal_website/kegeltour/JanSteen_Kegeln.JPG');
-      background-size: cover; /* This makes the image cover the entire page */
-      background-position: center;
-      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-size: cover; /* Ensures the image covers the entire page */
+      background-position: center center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents repeating the image */
+      background-attachment: fixed; /* Keeps the background fixed when scrolling */
       position: relative;
     }
 
     body::before {
       content: '';
-      position: fixed; /* Use fixed to ensure the overlay covers the entire viewport */
+      position: fixed; /* Keeps the overlay fixed to the viewport */
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+      background-color: rgba(0, 0, 0, 0.3); /* Reduces darkness to 30% opacity */
       z-index: 0;
     }
 
@@ -32,7 +33,7 @@
       position: relative;
       z-index: 1; /* Ensures the content is above the overlay */
       padding: 20px;
-      color: white; /* Ensure text is readable */
+      color: white; /* Ensures text is readable */
     }
 
     header, section, footer {
