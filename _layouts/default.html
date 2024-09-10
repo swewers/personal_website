@@ -13,29 +13,37 @@
 
     body {
       background-image: url('/personal_website/kegeltour/JanSteen_Kegeln.JPG');
-      background-size: cover; /* Ensures the image covers the entire screen */
-      background-position: right bottom; /* Aligns image to the right and bottom on larger screens */
-      background-repeat: no-repeat; /* Prevents repeating the image */
-      background-attachment: fixed; /* Keeps the background fixed during scroll */
+      background-size: cover;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     /* Custom link styles */
     a {
-      color: #f39c12; /* Change this to any color you want (orange in this case) */
-      text-decoration: none; /* Removes underline from links */
+      color: #f39c12;
+      text-decoration: none;
     }
 
     a:hover {
-      color: #e74c3c; /* Change the hover color (red in this case) */
-      text-decoration: underline; /* Adds underline when hovering */
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+
+    /* Title Style */
+    .kegeltour-title {
+      font-size: 3em; /* Larger font size for the title */
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
     .content-wrapper {
-      flex: 1; /* Ensures the content takes up available space */
+      flex: 1;
       position: relative;
       z-index: 1;
       padding: 20px;
       color: white;
+      margin-top: 50px; /* Moves the content higher */
     }
 
     header, section {
@@ -44,9 +52,9 @@
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.5); /* Optional: slightly transparent background for footer */
-      color: #ccc; /* Lighter color for footer text */
-      font-size: 0.8em; /* Smaller font size for the footer */
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ccc;
+      font-size: 0.8em;
       padding: 10px;
       text-align: center;
     }
@@ -54,21 +62,25 @@
     /* Media Query for Mobile Devices */
     @media screen and (max-width: 768px) { 
       body {
-        background-size: cover; /* Ensures the image still covers the screen on mobile */
-        background-position: center bottom; /* Aligns image to bottom and center on mobile */
-        background-attachment: scroll; /* Better for performance on mobile */
+        background-size: cover;
+        background-position: center bottom;
+        background-attachment: scroll;
       }
 
       header, section {
-        padding: 10px; /* Adjusts padding for smaller screens */
+        padding: 10px;
       }
 
       h1 {
-        font-size: 1.5em; /* Adjusts header font size for smaller screens */
+        font-size: 1.5em;
+      }
+
+      .kegeltour-title {
+        font-size: 2.5em; /* Slightly smaller for mobile */
       }
 
       footer {
-        font-size: 0.7em; /* Smaller footer text for mobile */
+        font-size: 0.7em;
       }
     }
   </style>
@@ -88,4 +100,3 @@
   </footer>
 </body>
 </html>
-
