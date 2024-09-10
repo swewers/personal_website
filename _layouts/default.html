@@ -7,6 +7,8 @@
       margin: 0;
       padding: 0;
       height: 100%; /* Ensures body takes up full height */
+      display: flex;
+      flex-direction: column;
     }
 
     body {
@@ -29,15 +31,24 @@
     }
 
     .content-wrapper {
+      flex: 1; /* Ensures the content takes up available space */
       position: relative;
       z-index: 1;
       padding: 20px;
       color: white;
     }
 
-    header, section, footer {
+    header, section {
       margin: 0;
       padding: 20px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5); /* Optional: slightly transparent background for footer */
+      color: #ccc; /* Lighter color for footer text */
+      font-size: 0.8em; /* Smaller font size for the footer */
+      padding: 10px;
+      text-align: center;
     }
 
     /* Media Query for Mobile Devices */
@@ -48,12 +59,16 @@
         background-attachment: scroll; /* Better for performance on mobile */
       }
 
-      header, section, footer {
+      header, section {
         padding: 10px; /* Adjusts padding for smaller screens */
       }
 
       h1 {
         font-size: 1.5em; /* Adjusts header font size for smaller screens */
+      }
+
+      footer {
+        font-size: 0.7em; /* Smaller footer text for mobile */
       }
     }
   </style>
@@ -67,8 +82,9 @@
     {{ content }}
   </section>
 
-  <footer class="content-wrapper">
+  <footer>
     <p>Powered by Jekyll and GitHub Pages</p>
+    <p>Background: <em>"Kegelspiel", Jan Steen (1660-1663)</em> | <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
   </footer>
 </body>
 </html>
