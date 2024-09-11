@@ -17,18 +17,23 @@ an 10:59 Utrecht Centraal, Gleis 5
 ab **11:28 Utrecht Centraal**, Gleis 8
 an 12:06 Den Haag Centraal, Gleis 5
 
+Reservierungen von Duisburg nach Utrecht: Wagen 24, 21-28, 33-34, 37-38
+
 # Rückfahrt
 
 - IC 2061 nachAmersfoort Schothorst:
 ab **16:09 Den Haag Centraal**, Gleis 4
-an **16:47 Utrecht Centraal**, Gleis 12
+an 16:47 Utrecht Centraal, Gleis 12
 
 - ICE 129 nach Frankfurt Hbf:
 ab **17:06 Utrecht Centraal**, Gleis 19
-an **18:32 Duisburg Hbf**, Gleis 2
+an 18:32 Duisburg Hbf, Gleis 2
 
 - ICE 624 nach Dortmund Hbf:
 ab **18:53 Duisburg Hbf**, Gleis 13
-an **19:03 Essen Hbf**, Gleis 6
+an 19:03 Essen Hbf, Gleis 6
+
+Reservierungen von Utrecht nach Duisburg: Wagen 34, 21-28, 33-34, 37-38
+
 
 
