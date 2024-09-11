@@ -6,9 +6,10 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%; /* Ensures body takes up full height */
+      height: 100%; /* Stellt sicher, dass der Body die gesamte Höhe einnimmt */
       display: flex;
       flex-direction: column;
+      justify-content: space-between; /* Platziert den Inhalt oben und den Footer unten */
     }
 
     body {
@@ -30,20 +31,10 @@
       text-decoration: underline;
     }
 
-    /* Title Style */
-    .kegeltour-title {
-      font-size: 5em; /* Larger font size for the title */
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
     .content-wrapper {
-      /* flex: 1;*/
-      position: static;
-      z-index: 1;
       padding: 20px;
       color: white;
-      margin-top: 10px; /* Moves the content higher */
+      margin-top: 50px; /* Verschiebt den Inhalt nach oben */
     }
 
     header, section {
@@ -57,9 +48,10 @@
       font-size: 0.8em;
       padding: 10px;
       text-align: center;
+      flex-shrink: 0; /* Verhindert, dass der Footer nach oben rutscht */
     }
 
-    /* Media Query for Mobile Devices */
+    /* Media Query für mobile Geräte */
     @media screen and (max-width: 768px) { 
       body {
         background-size: cover;
@@ -73,10 +65,6 @@
 
       h1 {
         font-size: 1.5em;
-      }
-
-      .kegeltour-title {
-        font-size: 4em; /* Slightly smaller for mobile */
       }
 
       footer {
