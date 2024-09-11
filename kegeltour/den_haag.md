@@ -6,6 +6,8 @@ title: Kegeltour "Voll daneben" 24
 Ziel unserer Reise ist 
 # Den Haag
 
+[Hin- und Rückfahrt](zugfahrt)
+
 Das Programm:
 
 - **[Freitag](freitag)**
