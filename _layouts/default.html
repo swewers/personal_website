@@ -7,9 +7,6 @@
       margin: 0;
       padding: 0;
       height: 100%; /* Stellt sicher, dass der Body die gesamte Höhe einnimmt */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Platziert den Inhalt oben und den Footer unten */
     }
 
     body {
@@ -34,7 +31,7 @@
     .content-wrapper {
       padding: 20px;
       color: white;
-      margin-top: 50px; /* Verschiebt den Inhalt nach oben */
+      margin-top: 20px; /* Verschiebt den Inhalt weiter nach oben */
     }
 
     header, section {
@@ -48,7 +45,9 @@
       font-size: 0.8em;
       padding: 10px;
       text-align: center;
-      flex-shrink: 0; /* Verhindert, dass der Footer nach oben rutscht */
+      position: absolute; /* Footer wird am unteren Rand der Seite fixiert */
+      bottom: 0;
+      width: 100%; /* Footer nimmt die gesamte Breite ein */
     }
 
     /* Media Query für mobile Geräte */
@@ -88,3 +87,4 @@
   </footer>
 </body>
 </html>
+
