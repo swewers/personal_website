@@ -3,7 +3,7 @@ layout: default
 title: Kegeltour "Voll daneben" 24
 ---
 
-# Hinfahrt
+## Hinfahrt
 
 - ICE 27 nach Wien Hbf:
 ab **09:00 Essen Hbf**, Gleis 2
@@ -19,7 +19,7 @@ an 12:06 Den Haag Centraal, Gleis 5
 
 Reservierungen von Duisburg nach Utrecht: Wagen 24, 21-28, 33-34, 37-38
 
-# Rückfahrt
+## Rückfahrt
 
 - IC 2061 nachAmersfoort Schothorst:
 ab **16:09 Den Haag Centraal**, Gleis 4
